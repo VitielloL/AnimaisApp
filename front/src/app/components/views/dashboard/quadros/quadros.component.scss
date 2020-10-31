@@ -1,0 +1,41 @@
+.square {
+  display: flex;
+  color: white;
+  background-color: #c2185b;
+  width: 90%;
+  // min-width: 260px;
+  min-height: 100px;
+  margin: 5px 5px 5px 5px;
+  border-radius: 5px;
+  // padding: 2px;
+  p {
+    margin-bottom: 2px;
+    font-size: 120%;
+  }
+  .icon-wrapper {
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90px;
+    i {
+      font-size: 60px;
+    }
+  }
+
+  .allText {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+    font-size: 0.9rem;
+
+    .numberText {
+      color: white;
+      font-size: 1.3rem;
+      font-weight: 500;
+    }
+  }
+}

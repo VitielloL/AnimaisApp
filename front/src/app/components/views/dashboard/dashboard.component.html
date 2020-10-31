@@ -1,1 +1,46 @@
-<p>dashboard works!</p>
+<mat-card class="dashboard mat-elevation-z3">
+    <mat-card-title class="title">Animais Cadastrados no Sistema</mat-card-title>
+  </mat-card>
+
+  <!-- Quadros -->
+<div class="wrap">
+    <app-quadros  
+    [titulo]="this.dados.gatos.nome"
+    [valor]="this.dados.gatos.valor"
+    [bigIcon]="'fas fa-cat'"
+    [bigIconColor]="'#4dffff'"
+    [IconImg]="'assets/animais genericos/gato.jpg'">
+    </app-quadros>
+
+    <app-quadros 
+    [titulo]="this.dados.ave.nome"
+    [valor]="this.dados.ave.valor"
+    [bigIcon]="'fas fa-crow'"
+    [bigIconColor]="'#4dffff'"
+    [IconImg]="'assets/animais genericos/passaro.jpg'">
+    </app-quadros>
+
+    <app-quadros
+    [titulo]="this.dados.peixe.nome"
+    [valor]="this.dados.peixe.valor"
+    [bigIcon]="'fas fa-fish'"
+    [bigIconColor]="'#4dffff'"
+    [IconImg]="'assets/animais genericos/peixe.jpg'"
+  ></app-quadros>
+
+  <app-quadros
+    [titulo]="this.dados.cao.nome"
+    [valor]="this.dados.cao.valor"
+    [bigIcon]="'fas fa-dog'"
+    [bigIconColor]="'#4dffff'"
+    [IconImg]="'assets/animais genericos/cachorro.jpg'"
+  ></app-quadros>
+
+  <app-quadros
+    [titulo]="this.dados.mico.nome"
+    [valor]="this.dados.mico.valor"
+    [bigIcon]="'fas fa-crow'"
+    [bigIconColor]="'#4dffff'"
+    [IconImg]="'assets/animais genericos/mico.jpg'"
+  ></app-quadros>
+</div>

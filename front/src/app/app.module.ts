@@ -22,9 +22,10 @@ import { MatInputModule } from '@angular/material/input';
 import { MatButtonModule } from '@angular/material/button';
 import { MatRadioModule } from '@angular/material/radio';
 import { DashboardComponent } from './components/views/dashboard/dashboard.component';
+import { QuadrosComponent } from './components/views/dashboard/quadros/quadros.component';
 
 @NgModule({
-  declarations: [AppComponent, HeaderComponent, FooterComponent, NavComponent, DashboardComponent],
+  declarations: [AppComponent, HeaderComponent, FooterComponent, NavComponent, DashboardComponent, QuadrosComponent],
 
   imports: [
     BrowserModule,

@@ -1,1 +1,33 @@
-<p>tabela-delete works!</p>
+<mat-card>
+    <mat-card-title>
+        Deletar Animal
+    </mat-card-title>
+
+    <form >
+        <mat-form-field class="input">
+            <input matInput placeholder="Nome do animal" [(ngModel)]="nome" name="nome"  disabled>
+        </mat-form-field>
+
+        <mat-radio-group
+        aria-labelledby="example-radio-group-label"
+        class="example-radio-group"
+        [(ngModel)]="grupoAnimal"
+        name="grupoAnimal">
+            Especie:
+            <mat-radio-button class="radio-button" value="Cachorro"  disabled> Cachorro  </mat-radio-button>
+            <mat-radio-button  class="radio-button" value="Gato"  disabled> Gato </mat-radio-button>
+          </mat-radio-group>
+
+        <mat-form-field>
+            <input matInput placeholder="Local - exemplo: RJ, Ilha do Governador"  [(ngModel)]="local" name="local"  disabled>
+        </mat-form-field>    
+    </form>
+
+    <button mat-raised-button (click)="delete()" color="primary">
+        Deletar
+    </button>
+
+    <button mat-raised-button (click)="cancel()">
+        Cancelar
+    </button>
+</mat-card>

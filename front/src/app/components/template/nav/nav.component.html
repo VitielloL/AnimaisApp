@@ -1,1 +1,28 @@
-<p>nav works!</p>
+<mat-sidenav-container class="container">
+    <mat-sidenav
+      class="sidenav"
+      mode="side"
+      opened
+      fixedInViewport="true"
+      fixedTopGap="64"
+    >
+      <mat-nav-list class="nav-list">
+        <a mat-list-item routerLink="/">
+          <i class="material-icons"> dashboard </i>
+          Dashboard
+        </a>
+        <a mat-list-item routerLink="/listaCliente">
+          <i class="material-icons"> storefront </i>
+          Cadastros
+        </a>
+        <a mat-list-item routerLink="/searchAnimal">
+          <i class="material-icons"> search </i>
+          Pesquisar Animais</a
+        >
+      </mat-nav-list>
+    </mat-sidenav>
+  
+    <mat-sidenav-content class="content">
+      <router-outlet></router-outlet>
+    </mat-sidenav-content>
+  </mat-sidenav-container>

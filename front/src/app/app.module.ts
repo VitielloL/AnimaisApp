@@ -3,11 +3,27 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { HttpClientModule } from '@angular/common/http';
+import { FormsModule } from '@angular/forms';
 
 // Template
 import { HeaderComponent } from './components/template/header/header.component';
 import { FooterComponent } from './components/template/footer/footer.component';
 import { NavComponent } from './components/template/nav/nav.component';
+
+// Views Animal Search
+import { AnimalSearchComponent } from './components/views/animal-search/animal-search.component';
+
+// Views Animal Dashboard
+import { DashboardComponent } from './components/views/dashboard/dashboard.component';
+import { QuadrosComponent } from './components/views/dashboard/quadros/quadros.component';
+
+// Views Animal List
+import { AnimallistComponent } from './components/views/animallist/animallist.component';
+import { TabelaReadComponent } from './components/views/animallist/tabela-read/tabela-read.component';
+import { TabelaUpdateComponent } from './components/views/animallist/tabela-update/tabela-update.component';
+import { TabelaDeleteComponent } from './components/views/animallist/tabela-delete/tabela-delete.component';
+import { TabelaCreateComponent } from './components/views/animallist/tabela-create/tabela-create.component';
 
 //Material Angular
 import { MatToolbarModule } from '@angular/material/toolbar';
@@ -21,14 +37,6 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 import { MatButtonModule } from '@angular/material/button';
 import { MatRadioModule } from '@angular/material/radio';
-import { DashboardComponent } from './components/views/dashboard/dashboard.component';
-import { QuadrosComponent } from './components/views/dashboard/quadros/quadros.component';
-import { AnimallistComponent } from './components/views/animallist/animallist.component';
-import { AnimalSearchComponent } from './components/views/animal-search/animal-search.component';
-import { TabelaReadComponent } from './components/views/animallist/tabela-read/tabela-read.component';
-import { TabelaUpdateComponent } from './components/views/animallist/tabela-update/tabela-update.component';
-import { TabelaDeleteComponent } from './components/views/animallist/tabela-delete/tabela-delete.component';
-import { TabelaCreateComponent } from './components/views/animallist/tabela-create/tabela-create.component';
 
 @NgModule({
   declarations: [
@@ -62,6 +70,8 @@ import { TabelaCreateComponent } from './components/views/animallist/tabela-crea
     MatInputModule,
     MatButtonModule,
     MatRadioModule,
+    HttpClientModule,
+    FormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

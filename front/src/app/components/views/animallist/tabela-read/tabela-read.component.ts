@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { AnimalService } from '../animal.service';
-
+import { Router } from '@angular/router';
 @Component({
   selector: 'app-tabela-read',
   templateUrl: './tabela-read.component.html',
@@ -11,7 +11,6 @@ export class TabelaReadComponent implements OnInit {
   displayedColumns = ['nome', 'especie', 'local', 'action'];
   isOpen;
   tabelaAnimal;
-
   constructor(private animalService: AnimalService) {}
 
   ngOnInit(): void {
@@ -19,6 +18,7 @@ export class TabelaReadComponent implements OnInit {
       this.tabelaAnimal = dadoAnimal;
     });
   }
+
   open() {
     this.isOpen = !this.isOpen;
   }

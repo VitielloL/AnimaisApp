@@ -10,3 +10,7 @@ back:
 install express    - npm i express
 
 install mongoose   - npm i mongoose
+
+backComJson
+
+install json-server - npm i json-server

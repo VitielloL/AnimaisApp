@@ -39,6 +39,9 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatRadioModule } from '@angular/material/radio';
 import { Animallistv2Component } from './components/views/animallistv2/animallistv2.component';
 import { TabelaReadv2Component } from './components/views/animallistv2/tabela-readv2/tabela-readv2.component';
+import { TabelaCreatev2Component } from './components/views/animallistv2/tabela-createv2/tabela-createv2.component';
+import { TabelaDeletev2Component } from './components/views/animallistv2/tabela-deletev2/tabela-deletev2.component';
+import { TabelaUpdatev2Component } from './components/views/animallistv2/tabela-updatev2/tabela-updatev2.component';
 
 @NgModule({
   declarations: [
@@ -56,6 +59,9 @@ import { TabelaReadv2Component } from './components/views/animallistv2/tabela-re
     TabelaCreateComponent,
     Animallistv2Component,
     TabelaReadv2Component,
+    TabelaCreatev2Component,
+    TabelaDeletev2Component,
+    TabelaUpdatev2Component,
   ],
 
   imports: [

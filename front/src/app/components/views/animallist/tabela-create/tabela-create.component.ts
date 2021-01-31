@@ -11,14 +11,13 @@ export class TabelaCreateComponent implements OnInit {
   nome;
   grupoAnimal;
   local;
-  criar;
 
   constructor(private animalService: AnimalService, private router: Router) {}
 
   ngOnInit(): void {}
   criarAnimal() {
     console.log(this.nome, this.grupoAnimal, this.local);
-    this.criar = this.animalService
+    this.animalService
       .create({
         nome: this.nome,
         especie: this.grupoAnimal,

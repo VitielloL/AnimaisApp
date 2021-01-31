@@ -18,12 +18,19 @@ import { AnimalSearchComponent } from './components/views/animal-search/animal-s
 import { DashboardComponent } from './components/views/dashboard/dashboard.component';
 import { QuadrosComponent } from './components/views/dashboard/quadros/quadros.component';
 
-// Views Animal List
+// Views Animal List v1
 import { AnimallistComponent } from './components/views/animallist/animallist.component';
 import { TabelaReadComponent } from './components/views/animallist/tabela-read/tabela-read.component';
 import { TabelaUpdateComponent } from './components/views/animallist/tabela-update/tabela-update.component';
 import { TabelaDeleteComponent } from './components/views/animallist/tabela-delete/tabela-delete.component';
 import { TabelaCreateComponent } from './components/views/animallist/tabela-create/tabela-create.component';
+
+//Views Animal List V2
+import { Animallistv2Component } from './components/views/animallistv2/animallistv2.component';
+import { TabelaReadv2Component } from './components/views/animallistv2/tabela-readv2/tabela-readv2.component';
+import { TabelaCreatev2Component } from './components/views/animallistv2/tabela-createv2/tabela-createv2.component';
+import { TabelaDeletev2Component } from './components/views/animallistv2/tabela-deletev2/tabela-deletev2.component';
+import { TabelaUpdatev2Component } from './components/views/animallistv2/tabela-updatev2/tabela-updatev2.component';
 
 //Material Angular
 import { MatToolbarModule } from '@angular/material/toolbar';
@@ -37,11 +44,7 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 import { MatButtonModule } from '@angular/material/button';
 import { MatRadioModule } from '@angular/material/radio';
-import { Animallistv2Component } from './components/views/animallistv2/animallistv2.component';
-import { TabelaReadv2Component } from './components/views/animallistv2/tabela-readv2/tabela-readv2.component';
-import { TabelaCreatev2Component } from './components/views/animallistv2/tabela-createv2/tabela-createv2.component';
-import { TabelaDeletev2Component } from './components/views/animallistv2/tabela-deletev2/tabela-deletev2.component';
-import { TabelaUpdatev2Component } from './components/views/animallistv2/tabela-updatev2/tabela-updatev2.component';
+import { MatSnackBarModule } from '@angular/material/snack-bar';
 
 @NgModule({
   declarations: [
@@ -68,6 +71,8 @@ import { TabelaUpdatev2Component } from './components/views/animallistv2/tabela-
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
+    HttpClientModule,
+    FormsModule,
     //Material Angular
     MatToolbarModule,
     MatSidenavModule,
@@ -80,8 +85,7 @@ import { TabelaUpdatev2Component } from './components/views/animallistv2/tabela-
     MatInputModule,
     MatButtonModule,
     MatRadioModule,
-    HttpClientModule,
-    FormsModule,
+    MatSnackBarModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

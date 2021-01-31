@@ -6,6 +6,7 @@ import { TabelaCreateComponent } from './components/views/animallist/tabela-crea
 import { TabelaDeleteComponent } from './components/views/animallist/tabela-delete/tabela-delete.component';
 import { TabelaUpdateComponent } from './components/views/animallist/tabela-update/tabela-update.component';
 import { Animallistv2Component } from './components/views/animallistv2/animallistv2.component';
+import { TabelaCreatev2Component } from './components/views/animallistv2/tabela-createv2/tabela-createv2.component';
 import { DashboardComponent } from './components/views/dashboard/dashboard.component';
 
 const routes: Routes = [
@@ -29,6 +30,10 @@ const routes: Routes = [
   {
     path: 'tabelacreate',
     component: TabelaCreateComponent,
+  },
+  {
+    path: 'tabelacreatev2',
+    component: TabelaCreatev2Component,
   },
   {
     path: 'tabeladelete/:id',

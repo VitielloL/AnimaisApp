@@ -1,9 +1,16 @@
 {
   "animais": [
     {
+      "id": 1,
       "nome": "Teca",
       "especie": "Gato",
       "local": "Rj, Ilha do Governador"
+    },
+    {
+      "nome": "Estelinha",
+      "especie": "Gato",
+      "local": "Rj, Campo Grande",
+      "id": 2
     }
   ]
 }

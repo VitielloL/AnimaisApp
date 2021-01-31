@@ -5,12 +5,16 @@ front:
 
 install angular and material - npm i
 
+--------------------------------------------------------------------------------------------------------------------------------------------
+
 back:
 
 install express    - npm i express
 
 install mongoose   - npm i mongoose
 
-backComJson
+--------------------------------------------------------------------------------------------------------------------------------------------
+
+backComJson:
 
 install json-server - npm i json-server

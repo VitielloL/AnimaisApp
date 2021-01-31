@@ -29,4 +29,8 @@ export class Animallistv2Service {
   create(animal: Animal): Observable<Animal> {
     return this.http.post<Animal>(this.baseUrl, animal);
   }
+
+  read(): Observable<Animal[]> {
+    return this.http.get<Animal[]>(this.baseUrl);
+  }
 }

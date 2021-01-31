@@ -41,6 +41,9 @@ export class TabelaUpdateComponent implements OnInit {
         local: this.local,
       })
       .subscribe(() => {
+        this.animalService.showMessage(
+          'Dados do animal atualizados com sucesso!'
+        );
         this.router.navigate(['/animallist']);
       });
   }

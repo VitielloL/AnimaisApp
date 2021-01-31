@@ -35,6 +35,9 @@ export class TabelaDeleteComponent implements OnInit {
   // delete no service e no ts.
   deletar() {
     this.animalService.delete(this.id).subscribe(() => {
+      this.animalService.showMessage(
+        'Animal deletado do sistema com sucessso!'
+      );
       this.router.navigate(['/animallist']);
     });
     console.log('testando deletar');

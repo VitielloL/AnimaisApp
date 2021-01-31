@@ -2,6 +2,7 @@ import { Injectable } from '@angular/core';
 import { environment } from 'src/environments/environment';
 import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
+import { MatSnackBar } from '@angular/material/snack-bar';
 
 export interface Animal {
   _id: String;
@@ -23,7 +24,16 @@ export interface CadastroAnimal {
 })
 export class AnimalService {
   url: string = environment.apiURL + '/animal';
-  constructor(private http: HttpClient) {}
+  constructor(private http: HttpClient, private snackBar: MatSnackBar) {}
+
+  showMessage(msg: string, isError: boolean = false): void {
+    this.snackBar.open(msg, 'X', {
+      duration: 3000,
+      horizontalPosition: 'right',
+      verticalPosition: 'top',
+      panelClass: isError ? ['msg-error'] : ['msg-success'],
+    });
+  }
 
   read(params?): Observable<CadastroAnimal> {
     return this.http.get<CadastroAnimal>(this.url, { params: params });

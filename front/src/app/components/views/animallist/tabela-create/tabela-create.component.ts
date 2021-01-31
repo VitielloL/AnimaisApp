@@ -25,6 +25,7 @@ export class TabelaCreateComponent implements OnInit {
         local: this.local,
       })
       .subscribe(() => {
+        this.animalService.showMessage('Animal Cadastrado com sucesso!');
         this.router.navigate(['/animallist']);
       });
   }

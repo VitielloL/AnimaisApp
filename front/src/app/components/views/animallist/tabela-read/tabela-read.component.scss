@@ -1,3 +1,15 @@
+.cardTable {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+  .title {
+    font-family: "Sansita Swashed";
+    font-size: 3rem;
+    font-weight: 300;
+    line-height: 1.2;
+  }
+}
+
 .formfiltro {
   background-color: #424242;
   width: 100%;

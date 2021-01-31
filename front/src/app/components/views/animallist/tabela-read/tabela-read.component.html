@@ -9,10 +9,13 @@
 <button mat-raised-button class="cardFiltro" color="primary" (click)="this.open()">{{this.isOpen ? "-" : "+" }} Filtrar Animal </button>
 
 <!-- FILTRAR PELO FRONT -->
-<!-- <mat-form-field  *ngIf="this.isOpen" class="formfiltro">
-    <mat-label class="label">Filtrar</mat-label>
-    <input matInput (keyup)="filter($event)" placeholder="Ex: Gato" #input>
-</mat-form-field> -->
+<mat-form-field  *ngIf="this.isOpen" class="formfiltro">
+  <mat-card  class="cardTable2 mat-elevation-z3">
+    <mat-card-title class="title"> Um dia Rola um filtro kkkkk </mat-card-title>
+  </mat-card>
+    <!-- <mat-label class="label">Filtrar</mat-label> -->
+    <!-- <input matInput (keyup)="filter($event)" placeholder="Ex: Gato" #input> -->
+</mat-form-field>
 
 <table mat-table *ngIf="this.tabelaAnimal?.animais" [dataSource]="tabelaAnimal?.animais" class="mat-elevation-z8">  
   <!-- Id Column -->

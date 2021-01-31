@@ -37,6 +37,8 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 import { MatButtonModule } from '@angular/material/button';
 import { MatRadioModule } from '@angular/material/radio';
+import { Animallistv2Component } from './components/views/animallistv2/animallistv2.component';
+import { TabelaReadv2Component } from './components/views/animallistv2/tabela-readv2/tabela-readv2.component';
 
 @NgModule({
   declarations: [
@@ -52,6 +54,8 @@ import { MatRadioModule } from '@angular/material/radio';
     TabelaUpdateComponent,
     TabelaDeleteComponent,
     TabelaCreateComponent,
+    Animallistv2Component,
+    TabelaReadv2Component,
   ],
 
   imports: [

@@ -37,5 +37,7 @@ export class AnimalService {
     return this.http.post<CadastroAnimal>(this.url, body);
   }
   //delete no service e no ts
-  // delete() {}
+  delete(id) {
+    return this.http.delete<animalUnico>(`${this.url}/${id}/delete`);
+  }
 }

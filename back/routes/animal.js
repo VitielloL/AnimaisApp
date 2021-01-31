@@ -32,7 +32,7 @@ router.post("/", async function (req, res) {
     return res.json({ Animal: returnAnimal })
 })
 //delete
-router.delete("/:id", async function (req, res) {
+router.delete("/:id/delete", async function (req, res) {
     const { id } = req.params
     await Animal.deleteOne({
         _id: id

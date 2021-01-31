@@ -33,16 +33,11 @@ export class TabelaDeleteComponent implements OnInit {
     });
   }
   // delete no service e no ts.
-  delete() {
+  deletar() {
     this.animalService.delete(this.id).subscribe(() => {
       this.router.navigate(['/animallist']);
     });
     console.log('testando deletar');
-
-    // this.animalService.delete()
-    // this.tabelaReadService.delete(this.dadoAnimal.animais[0]).subscribe(() => {
-    //   this.router.navigate(['/listaCliente']);
-    // });
   }
 
   cancel(): void {

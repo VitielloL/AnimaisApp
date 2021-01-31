@@ -40,4 +40,7 @@ export class AnimalService {
   delete(id) {
     return this.http.delete<animalUnico>(`${this.url}/${id}/delete`);
   }
+  update(id, body) {
+    return this.http.put<animalUnico>(`${this.url}/${id}`, body);
+  }
 }

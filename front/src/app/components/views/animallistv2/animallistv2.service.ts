@@ -1,7 +1,8 @@
 import { Injectable } from '@angular/core';
 import { MatSnackBar } from '@angular/material/snack-bar';
 import { HttpClient } from '@angular/common/http';
-import { Observable } from 'rxjs';
+import { Observable, EMPTY } from 'rxjs';
+import { map, catchError } from 'rxjs/operators';
 
 export interface Animal {
   id?: string;
@@ -28,25 +29,45 @@ export class Animallistv2Service {
   }
 
   create(animal: Animal): Observable<Animal> {
-    return this.http.post<Animal>(this.baseUrl, animal);
+    return this.http.post<Animal>(this.baseUrl, animal).pipe(
+      map((obj) => obj),
+      catchError((e) => this.errorHandler(e))
+    );
   }
 
   read(): Observable<Animal[]> {
-    return this.http.get<Animal[]>(this.baseUrl);
+    return this.http.get<Animal[]>(this.baseUrl).pipe(
+      map((obj) => obj),
+      catchError((e) => this.errorHandler(e))
+    );
   }
 
   readById(id: string): Observable<Animal> {
     const url = `${this.baseUrl}/${id}`;
-    return this.http.get<Animal>(url);
+    return this.http.get<Animal>(url).pipe(
+      map((obj) => obj),
+      catchError((e) => this.errorHandler(e))
+    );
   }
 
   update(animal: Animal): Observable<Animal> {
     const url = `${this.baseUrl}/${animal.id}`;
-    return this.http.put<Animal>(url, animal);
+    return this.http.put<Animal>(url, animal).pipe(
+      map((obj) => obj),
+      catchError((e) => this.errorHandler(e))
+    );
   }
 
   delete(id: string): Observable<Animal> {
     const url = `${this.baseUrl}/${id}`;
-    return this.http.delete<Animal>(url);
+    return this.http.delete<Animal>(url).pipe(
+      map((obj) => obj),
+      catchError((e) => this.errorHandler(e))
+    );
+  }
+
+  errorHandler(e: any): Observable<any> {
+    this.showMessage('Ocorreu um erro!', true);
+    return EMPTY;
   }
 }

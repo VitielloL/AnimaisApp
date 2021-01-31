@@ -23,6 +23,18 @@
       "especie": "Cachorro",
       "local": "RJ, Ilha do Governador",
       "id": 4
+    },
+    {
+      "nome": "Cleitinho",
+      "especie": "Cachorro",
+      "local": "Rj, Campo Grande",
+      "id": 5
+    },
+    {
+      "nome": "Luma",
+      "especie": "Gato",
+      "local": "Rj, Bonsucesso",
+      "id": 6
     }
   ]
 }

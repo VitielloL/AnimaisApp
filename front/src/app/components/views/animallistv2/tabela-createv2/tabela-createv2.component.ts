@@ -22,7 +22,6 @@ export class TabelaCreatev2Component implements OnInit {
     this.animalv2.create(this.animais).subscribe(() => {
       this.animalv2.showMessage('Animal Cadastrado!');
       this.router.navigate(['/animallistv2']);
-      console.log(this.animais);
     });
   }
 

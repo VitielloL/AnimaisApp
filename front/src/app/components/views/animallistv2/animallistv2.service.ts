@@ -4,6 +4,7 @@ import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
 
 export interface Animal {
+  id?: number;
   nome: String;
   especie: String;
   local: String;
@@ -32,5 +33,15 @@ export class Animallistv2Service {
 
   read(): Observable<Animal[]> {
     return this.http.get<Animal[]>(this.baseUrl);
+  }
+
+  readById(id: string): Observable<Animal> {
+    const url = `${this.baseUrl}/${id}`;
+    return this.http.get<Animal>(url);
+  }
+
+  update(animal: Animal): Observable<Animal> {
+    const url = `${this.baseUrl}/${animal.id}`;
+    return this.http.put<Animal>(url, animal);
   }
 }

@@ -7,6 +7,8 @@ import { TabelaDeleteComponent } from './components/views/animallist/tabela-dele
 import { TabelaUpdateComponent } from './components/views/animallist/tabela-update/tabela-update.component';
 import { Animallistv2Component } from './components/views/animallistv2/animallistv2.component';
 import { TabelaCreatev2Component } from './components/views/animallistv2/tabela-createv2/tabela-createv2.component';
+import { TabelaDeletev2Component } from './components/views/animallistv2/tabela-deletev2/tabela-deletev2.component';
+import { TabelaUpdatev2Component } from './components/views/animallistv2/tabela-updatev2/tabela-updatev2.component';
 import { DashboardComponent } from './components/views/dashboard/dashboard.component';
 
 const routes: Routes = [
@@ -40,8 +42,16 @@ const routes: Routes = [
     component: TabelaDeleteComponent,
   },
   {
+    path: 'tabeladeletev2/:id',
+    component: TabelaDeletev2Component,
+  },
+  {
     path: 'tabelaupdate/:id',
     component: TabelaUpdateComponent,
+  },
+  {
+    path: 'tabelaupdatev2/:id',
+    component: TabelaUpdatev2Component,
   },
 ];
 

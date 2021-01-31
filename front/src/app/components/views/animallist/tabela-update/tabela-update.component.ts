@@ -13,8 +13,6 @@ export class TabelaUpdateComponent implements OnInit {
   grupoAnimal;
   local;
   id;
-  lerUm;
-
   constructor(
     private router: Router,
     private route: ActivatedRoute,
@@ -48,5 +46,7 @@ export class TabelaUpdateComponent implements OnInit {
       });
   }
 
-  cancel() {}
+  cancel() {
+    this.router.navigate(['/animallist']);
+  }
 }

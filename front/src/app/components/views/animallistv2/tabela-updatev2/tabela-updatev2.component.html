@@ -1,1 +1,33 @@
-<p>tabela-updatev2 works!</p>
+<mat-card>
+    <mat-card-title>
+        Editar Animal
+    </mat-card-title>
+
+    <form >
+        <mat-form-field class="input">
+            <input matInput placeholder="Nome do animal" [(ngModel)]="animal.nome" name="nome">
+        </mat-form-field>
+
+        <mat-radio-group
+        aria-labelledby="example-radio-group-label"
+        class="example-radio-group"
+        [(ngModel)]="animal.especie"
+        name="grupoAnimal">
+            Especie:
+            <mat-radio-button class="radio-button" value="Cachorro"> Cachorro  </mat-radio-button>
+            <mat-radio-button  class="radio-button" value="Gato"> Gato </mat-radio-button>
+          </mat-radio-group>
+
+        <mat-form-field>
+            <input matInput placeholder="Local - exemplo: RJ, Ilha do Governador"  [(ngModel)]="animal.local" name="local">
+        </mat-form-field>    
+    </form>
+
+    <button mat-raised-button (click)="update()" color="primary">
+        Editar
+    </button>
+
+    <button mat-raised-button (click)="cancel()">
+        Cancelar
+    </button>
+</mat-card>

@@ -13,7 +13,6 @@ export class TabelaDeleteComponent implements OnInit {
   grupoAnimal;
   local;
   id;
-  lerUm;
 
   constructor(
     private router: Router,

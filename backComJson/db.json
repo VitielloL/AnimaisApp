@@ -17,6 +17,12 @@
       "especie": "Gato",
       "local": "RJ, Ilha do Governador",
       "id": 3
+    },
+    {
+      "nome": "Nemo",
+      "especie": "Cachorro",
+      "local": "RJ, Ilha do Governador",
+      "id": 4
     }
   ]
 }

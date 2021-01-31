@@ -1,5 +1,5 @@
 # AnimaisApp
-Projeto que contem de diversas funcionalidades: front em angular, back em node e mongodb e um back test utilizando apenas json
+Projeto que contem de diversas funcionalidades: frontend em Angular, backend em Node + MongoDB e um backend teste utilizando apenas Json.
 
 --------------------------------------------------------------------------------------------------------------------------------------------
 

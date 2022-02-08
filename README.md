@@ -1,5 +1,6 @@
 # AnimaisApp
 Projeto que contem de diversas funcionalidades: frontend em Angular, backend em Node + MongoDB e um backend teste utilizando apenas Json.
+Link para visualizar https://animais-app.vercel.app/
 
 --------------------------------------------------------------------------------------------------------------------------------------------
 

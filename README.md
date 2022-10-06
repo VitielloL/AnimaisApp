@@ -1,23 +1,28 @@
 # AnimaisApp
-Projeto que contem de diversas funcionalidades: frontend em Angular, backend em Node + MongoDB e um backend teste utilizando apenas Json.
-Link para visualizar https://animais-app.vercel.app/
+
+CRUD e Filtros utilizando Angular + Node e MongoDB ou Json.
+Hospedagem: https://animais-app.vercel.app/
 
 --------------------------------------------------------------------------------------------------------------------------------------------
 
-front: 
+<i>Frontend:</i> 
 
-install angular and material - npm i
+npm i
 
---------------------------------------------------------------------------------------------------------------------------------------------
+npm install -g @angular/cli
 
-back:
-
-install express    - npm i express
-
-install mongoose   - npm i mongoose
+ng add @angular/material
 
 --------------------------------------------------------------------------------------------------------------------------------------------
 
-backComJson:
+Backend:
 
-install json-server - npm i json-server
+npm i express
+
+npm i mongoose
+
+--------------------------------------------------------------------------------------------------------------------------------------------
+
+Json:
+
+npm i json-server
